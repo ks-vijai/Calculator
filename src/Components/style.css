@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  margin: 0;
+}
+
+.heading-bar {
+  background: linear-gradient(to right, #d3a8c0, #c2d84b);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.heading {
+  color: #1f6aac;
+  padding: 10px;
+}
+
+.caluclator-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  margin-top: 1.5rem;
+}
+
+.caluclator-grid > button {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+.caluclator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.output-screen {
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-column: 1 / -1;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.clear-button {
+  grid-column: span 2;
+}
+
+.previous-value {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+}
+
+.current-value {
+  color: white;
+  font-size: 25px;
+}
